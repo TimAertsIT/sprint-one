@@ -1,0 +1,229 @@
+html {
+    font-size: 62.5%;
+    max-width: 1200px;
+}
+
+html,
+body {
+    margin: 1rem;
+}
+
+.header {
+    background-image: url("header.jpg");
+    background-position: center;
+
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem;
+    color: grey;
+}
+
+.icon {
+    height: 100%;
+    max-width: 20%;
+    text-align: center;
+}
+
+.header-image {
+    padding: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: orange;
+    opacity: 50%;
+}
+
+.container>div {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.section {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.another-article {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    background-color: lightgrey;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.article {
+    background-color: lightgrey;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.8rem;
+    color: darkslategrey;
+}
+
+.first-column {
+    background-color: beige;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    width: 45%;
+}
+
+.contaainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.Trying {
+    color: white;
+    background-color: darkorange;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.longtext {
+    column-count: 2;
+}
+
+.leermas {
+    padding-top: 10rem;
+    animation: moverIzquierda 10s ease-in;
+}
+
+.second-column {
+    background-color: beige;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    width: 45%;
+}
+
+.third-column {
+    background-color: beige;
+    padding: 1rem;
+    margin: 1rem;
+    width: 45%;
+    text-align: left;
+}
+
+.fourth-column {
+    background-color: beige;
+    padding: 1rem;
+    margin: 1rem;
+    width: 45%;
+    text-align: left;
+}
+
+#wide-column {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem;
+}
+
+.something {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5rem;
+    text-align: center;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: rgb(169, 168, 168);
+    border-left: 1rem solid lightgrey;
+    border-right: 1rem solid lightgrey;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section {
+        display: block;
+    }
+
+    .two-columns {
+        display: block;
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    .first-column {
+        width: 90%;
+    }
+
+    .second-column {
+        width: 90%;
+    }
+
+    .third-column {
+        width: 90%;
+    }
+
+    .fourth-column {
+        width: 90%;
+    }
+
+    .another-article {
+        border-left: none;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    #wide-column {
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .two-columns {
+        display: block;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    #wide-column {
+        padding-bottom: 1rem;
+    }
+}
