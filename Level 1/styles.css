@@ -1,0 +1,115 @@
+html {
+    max-width: 1200px;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 1rem;
+}
+
+.header {
+    border: 2rem solid black; 
+}
+
+.container {
+    border-bottom: 1rem solid black;
+    display: flex;
+    background-color: rgb(36, 36, 36);
+}
+
+.header-image {
+    background-color: orange;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(139, 102, 8);
+}
+
+.search {
+    flex: 2;
+}
+
+.container>div {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ff6f69;
+}
+
+.section {
+    border: 2rem solid black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    background-color: rgb(36, 36, 36);
+}
+
+.two-columns {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#wide-column {
+    text-align: center;
+    font-size: 2rem;
+    color: lightskyblue;
+    padding: 1rem;
+}
+
+.another-article {
+    text-align: center;
+    font-size: 2rem;
+    color: beige;
+    background-color: palevioletred;
+    padding: 1rem;
+    border-left: 2rem solid black;
+}
+
+.footer {
+    border: 2rem solid black;
+    background-color: rgb(139, 102, 8);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .section {
+        border: 2rem solid yellow;
+        display: block;
+    }
+
+    .another-article {
+        border-left: none;
+        background-color: darkorange;
+        border-top: 2rem solid yellow;
+        margin-top: 0rem;
+    }
+
+    #wide-column {
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        border-bottom: 2rem solid black;
+        display: block;
+    }
+
+    .two-columns {
+        display: block;
+    }
+
+    #wide-column {
+        padding-bottom: 1rem;
+    }
+}
